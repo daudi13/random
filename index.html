@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <h1>Header</h1>
+    <h1>0</h1>
 
 
-    <button onclick="hello()">clik to see the magic</button>
+    <button onclick="count()">clik to see the magic</button>
 
     <script>
         // let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
@@ -153,22 +153,31 @@ t           here are no space.*/
             //     console.log(n1)
             // }
 
-            // let counter = 0;
+            let counter = 0;
 
-            // function count () {
-            //     counter++;
-            //     alert('number ' + counter);
-            // }
+            function count() {
 
-            function hello(){
+                let meter = document.querySelector('h1') 
 
-                if (document.querySelector('h1').innerHTML ==='header') {
-                    document.querySelector('h1').innerHTML = 'Goodbye';
+                if (meter.InnerHTML === 0) {
+                    meter.InnerHTML = counter++;
                 } else {
-                    document.querySelector('h1').innerHTML = 'header';
+                    meter.querySelector('h1').InnerHTML = 0;
                 }
                 
             }
+
+            // function hello(){
+
+
+            //     let heading = document.querySelector('h1');
+            //     if (heading.innerHTML ==='header') {
+            //         heading.innerHTML = 'Goodbye';
+            //     } else {
+            //         heading.innerHTML = 'header';
+            //     }
+                
+            // }
 
 
 
