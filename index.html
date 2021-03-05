@@ -169,8 +169,13 @@ t           here are no space.*/
             // document.querySelector('button').onclick = count
 
             document.querySelector('form').onsubmit = function () {
-                let name = document.querySelector('#name').value;
-                alert("hello! " + name)
+                let name = document.querySelector('#name').value;  
+                if (name === "") {
+                    alert("enter your name please")
+                } else {
+                    alert("Hello!, " + name)
+                }
+                
             }
 
             // function hello(){
