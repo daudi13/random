@@ -190,18 +190,35 @@ t           here are no space.*/
                 
             // }
 
-            const isEven = (n) => {
-                return n%2 === 0;
+            // const isEven = (n) => {
+            //     return n%2 === 0;
+            // }
+
+            // let printMsg = (evenFunc, num) => {
+            //     const isNumEven = evenFunc(num);
+
+            //     console.log('The number ' + num + ' is an even number:' + evenFunc)
+            // }
+
+            // printMsg(isEven, 7)
+
+
+            const isOdd = (x) =>{
+                return x%2 !==0;
             }
 
-            let printMsg = (evenFunc, num) => {
-                const isNumEven = evenFunc(num);
+            const isNumOdd = (func, num) => {
+                const numOdd = func(num);
 
-                console.log('The number ' + num + ' is an even number:' + evenFunc)
+                if ( num%2 !==0 ) {
+                    console.log( num + ' is an odd number');
+                } else {
+                    console.log( num +' is an even number');
+                }
             }
 
-            printMsg(isEven, 7)
 
+            console.log(isNumOdd(isOdd, 6));
 
 
     </script>
