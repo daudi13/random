@@ -244,13 +244,24 @@ t           here are no space.*/
 
             // console.log(bigData)
 
-            const fruits = ['mango', 'kiwi', 'banana', 'pineapple', 'pawpaw'];
+            // const fruits = ['mango', 'kiwi', 'banana', 'pineapple', 'pawpaw'];
 
-            const smallWords = fruits.filter(word => {
-                return word.length > 5;
-            })
+            // const smallWords = fruits.filter(word => {
+            //     return word.length > 5;
+            // })
 
-            console.log(smallWords);
+            // console.log(smallWords);
+
+            const numberArray = [100, 300, 400, 2.1, 5000, 1200, 43, 1, 25, 55, 34];
+
+            const doubleDigits = numberArray.filter(number => {
+                
+                if(number > 10 && number < 99) {
+                    return number;
+                }
+            });
+
+            console.log(doubleDigits)
 
 
 
