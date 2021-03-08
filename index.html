@@ -246,9 +246,11 @@ t           here are no space.*/
 
             const fruits = ['mango', 'kiwi', 'banana', 'pineapple', 'pawpaw'];
 
-            fruits.forEach(fruitbasket => console.log('I will buy ' + fruitbasket ));
+            const smallWords = fruits.filter(word => {
+                return word.length > 5;
+            })
 
-            console.log(fruitbasket);
+            console.log(smallWords);
 
 
 
