@@ -284,12 +284,20 @@ t           here are no space.*/
             //     }
             // })
 
-            // promises
+            // promises resolve
+
+            // const promise = new Promise((resolve, reject) => {
+            //     setTimeout(() => {
+            //         resolve()
+            //     }, 3000) 
+            // })
+
+            // promise reject 
 
             const promise = new Promise((resolve, reject) => {
                 setTimeout(() => {
-                    resolve()
-                }, 3000) 
+                    reject()
+                }, 3000)
             })
 
 
