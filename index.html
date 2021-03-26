@@ -315,6 +315,21 @@ t           here are no space.*/
             // })
 
 
+            const candyStore = {
+                chocolate: 200,
+                berry: 500,
+                lollipop: 200
+            }
+
+            const promise = new Promise((resolve, reject) => {
+                if (candyStore.berry > 1 || candyStore.berry <= 500) {
+                    resolve('chocolate candy bought successfully');
+                } else {
+                    reject('No chocolate for sale, buy another candy');
+                }
+            })
+
+
     </script>
 </head>
 <body>
